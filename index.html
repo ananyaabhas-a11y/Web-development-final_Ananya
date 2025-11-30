@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts School of Witchcraft and Wizardry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/hogwarts-crest.jpg" alt="Hogwarts Crest" class="hogwarts-logo-login">
+            <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+            <p class="tagline">Draco Dormiens Nunquam Titillandus</p>
+        </div>
+        
+        <div class="auth-container">
+            <div class="auth-box">
+                <h2>Student Login</h2>
+                <form id="loginForm" action="login.php" method="POST">
+                    <input type="text" name="student_id" placeholder="Student ID" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="switch-link">New student? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

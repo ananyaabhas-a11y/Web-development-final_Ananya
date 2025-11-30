@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Hogwarts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/hogwarts-crest.jpg" alt="Hogwarts Crest" class="hogwarts-logo-login">
+            <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+            <p class="tagline">Student Registration</p>
+        </div>
+        
+        <div class="auth-container">
+            <div class="auth-box register-box">
+                <h2>Register New Student</h2>
+                <form id="registerForm" action="register.php" method="POST">
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <select name="house" required>
+                        <option value="">Select House</option>
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Slytherin">Slytherin</option>
+                    </select>
+                    <input type="text" name="year" placeholder="Year (1-7)" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p class="switch-link">Already registered? <a href="index.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
